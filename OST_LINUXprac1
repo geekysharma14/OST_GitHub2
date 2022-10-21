@@ -1,0 +1,51 @@
+$ bash positive_negative                                                                                                          17,1          Al
+to check whether the number given is positive or negative
+enter the first nummber :-
+42
+given number is positive
+given number is even
+$ cat arithmetic_operation
+echo "Arithmetic operations :- "
+echo "Enter the 1st no :- "
+read a
+echo "Addition :-"
+echo "enter the 2nd no :- "
+read b
+c=$(( $a + $b ))
+echo "the answer is "$c
+s=$(( $a - $b ))
+echo " the answer is "$s
+d=$(( $a / $b ))
+echo "the answer is "$d
+m=$(( $a * $b ))
+echo "the answer is "$m
+b
+$ cat swapping_two
+o "swapping with two variables"
+echo " enter the first number "
+read a
+echo  " enter the second number "
+read b
+a=$(($a + $b))
+b=$(($a - $b))
+a=$(($a - $b))
+echo "the value of a after swapping is "$a "& the value of b after swapping is "$b
+$ cat positive_negative
+
+echo "to check whether the number given is positive or negative "
+echo "enter the first nummber :-"
+read a
+if test $a -ge 0
+then
+     echo "given number is positive"
+     c=$(( $a%2 ))
+     if test $c -eq 0
+     then
+           echo "given number is even "
+     else
+           echo "given number is odd"
+     fi
+else
+     echo "given number is negative "
+
+fi
